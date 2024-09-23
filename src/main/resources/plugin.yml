@@ -1,0 +1,23 @@
+name: SMP
+version: '1.0-SNAPSHOT'
+main: de.melone.sMP.SMP
+api-version: '1.21'
+
+commands:
+  craft:
+  dc:
+  ec:
+  delhome:
+  event:
+  home:
+  sethome:
+  setspawn:
+  setwarp:
+  spawn:
+  tpa:
+  twitch:
+  warp:
+  tpaccept:
+  msg:
+  r:
+  discord:
