@@ -16,6 +16,17 @@ public class CMD_ec implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String s, @NotNull String[] args) {
         Player player = (Player) sender;
 
+        if (args.length == 1) {
+            Player target = Bukkit.getPlayer(args[0]);
+
+            if (target == null) {
+                player.sendMessage("Der angegebene Spieler ist nicht online.");
+                return true;
+            }
+
+            player.openInventory(target.getEnderChest());
+        }
+
         player.openInventory(player.getEnderChest());
 
         return false;
